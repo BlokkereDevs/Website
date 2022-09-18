@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color:#373a3c;
 }
 #page{
     width:95%;
@@ -79,7 +79,7 @@ body {
 }
 
 /* Email */
-.fa-email:hover {
+.fa-envelope:hover {
     color: #61d14abf;
 }
 
