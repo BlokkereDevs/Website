@@ -61,7 +61,7 @@ body {
   width: 35px;
   text-align: center;
   text-decoration: none;
-  background: black;
+  background: #373a3c;
   color: white;
   transition: 0.4s;
 }
@@ -78,8 +78,8 @@ body {
     color: #55ACEE;
 }
 
-/* Phone */
-.fa-phone:hover {
+/* Email */
+.fa-email:hover {
     color: #61d14abf;
 }
 
