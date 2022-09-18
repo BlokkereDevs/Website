@@ -79,7 +79,7 @@ body {
 
 /* Email */
 .fa-envelope:hover {
-    color: #61d14abf;
+    color: #e7c9a9;
 }
 
 /* Map */
@@ -90,4 +90,9 @@ body {
 /* Whatsapp */
 .fa-whatsapp:hover {
     color: #25D366;
+}
+
+/* Telegram */
+.fa-telegram:hover {
+    color: #0088cc;
 }
