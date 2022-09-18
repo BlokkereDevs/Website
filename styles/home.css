@@ -86,3 +86,8 @@ body {
 .fa-map-marker:hover {
     color: #ff3b3bd1;
 }
+
+/* Whatsapp */
+.fa-whatsapp:hover {
+    color: #25D366;
+}
