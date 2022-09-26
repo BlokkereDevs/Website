@@ -14,8 +14,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
         <link rel="stylesheet" href="./styles/home.css"/>
+        <link rel="stylesheet" href="./styles/toast.css"/>
     </head>
     <body>
+        <div id="snackbar">Thanks for subscribing</div>
         <div id="page">
             <div id="header">
                 <div id="logo"></div>
@@ -27,12 +29,62 @@
                     We are Blockchain expert
                 </div>
                 <div id="contact">
-                    <a href="#" class="fa fa-twitter" target="_blank"></a>
-                    <a href="mailto::letscrypto@blokkere.com?subject=Help me with a new query!" class="fa fa-envelope" target="_blank"></a>
-                    <a href="https://t.me/+EaEnn1uRy7E1MTBh" class="fa fa-telegram" target="_blank"></a>
-                    <a href="#" class="fa fa-whatsapp"></a>
+                    <div id="links">
+                        <a href="#" class="fa fa-twitter" target="_blank"></a>
+                        <a href="mailto::letscrypto@blokkere.com?subject=Help me with a new query!" class="fa fa-envelope" target="_blank"></a>
+                        <a href="https://t.me/+EaEnn1uRy7E1MTBh" class="fa fa-telegram" target="_blank"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                    <div id="subscribe">
+                        Subscribe to our beta release:
+                        <form id="my-form" action="https://formspree.io/f/mbjbgppw" method="POST">
+                            <label>Email:</label>
+                            <input type="email" name="email" />
+                            <label>Message:</label>
+                            <input type="text" name="message" />
+                            <button id="my-form-button">Submit</button>
+                            <p id="my-form-status"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <script>
+            var form = document.getElementById("my-form");
+            function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+            
+            async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                myFunction();
+                form.reset()
+                } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+            }
+            form.addEventListener("submit", handleSubmit);
+        </script>
     </body>
 </html>
