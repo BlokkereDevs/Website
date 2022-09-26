@@ -40,11 +40,13 @@ body {
 }
 
 #what{
-    display: table-cell;
+    display: flex;
     vertical-align: middle;
     font-family: 'Electrolize';
     font-size: 5vw;
     padding-left: 20%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #contact{
@@ -53,6 +55,16 @@ body {
     vertical-align: middle;
 }
 
+#links{
+  display: table-cell;
+}
+
+#subscribe{
+  display: table-cell;
+  font-family: 'Electrolize';
+  vertical-align: middle;
+  font-size: 1.5vw;
+}
 /* Social media buttons */
 .fa {
   padding: 10px;
