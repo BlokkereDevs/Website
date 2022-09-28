@@ -66,11 +66,18 @@ body {
 #subscribe{
   display: table-cell;
   font-family: 'Electrolize';
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   font-size: 1.5vw;
   background-color: #13121257;
   border-radius: 41px;
+  box-shadow: 10px 10px #00000024;
+  padding-left: 8%;
+  padding-right: 5%;
+}
+
+input{
+    border-radius: 4px;
 }
 
 /* Social media buttons */
