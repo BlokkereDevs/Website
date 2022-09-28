@@ -72,6 +72,7 @@ body {
   background-color: #13121257;
   border-radius: 41px;
 }
+
 /* Social media buttons */
 .fa {
   padding: 10px;
@@ -79,7 +80,7 @@ body {
   width: 35px;
   text-align: center;
   text-decoration: none;
-  background: #373a3c;
+  background: #44484a00;
   color: white;
   transition: 0.4s;
 }
