@@ -40,12 +40,14 @@ body {
 }
 
 #what{
-    display: flex;
+    display: table-cell;
     vertical-align: middle;
+    text-align: center;
     font-family: 'Electrolize';
     font-size: 5vw;
-    padding-left: 20%;
+    padding-left: 3%;
     flex-direction: row;
+    width: 60%;
     justify-content: space-around;
 }
 
@@ -62,6 +64,7 @@ body {
 #subscribe{
   display: table-cell;
   font-family: 'Electrolize';
+  text-align: center;
   vertical-align: middle;
   font-size: 1.5vw;
 }
