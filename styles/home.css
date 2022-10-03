@@ -1,6 +1,9 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(72,76,79,1) 90%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,46,64,1) 50%);
 }
 
 #page{
@@ -10,7 +13,7 @@ body {
 }
 
 #header {
-    width: 100%;
+    width: 95%;
     height: 10%;
     margin: auto;
     display: table;
@@ -34,10 +37,32 @@ body {
     vertical-align: middle;
 }
 
+#right_side {
+    font-size: 3vw;
+    font-family: 'Electrolize';
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 12%;
+}
+
+.rs{
+    text-decoration: none;
+    background: #44484a00;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Facebook */
+.rs-about:hover {
+  color: #8C82FC;
+}
+
 #content {
     display: table;
-    height: 87%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
+    padding: 1%;
     margin: auto;
 }
 
@@ -48,18 +73,11 @@ body {
     font-family: 'Electrolize';
     font-size: 5vw;
     flex-direction: row;
-    width: 60%;
+    width: 65%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     justify-content: space-around;
-}
-
-#contact{
-    display: table-row;
-    height: 5%;
-    vertical-align: middle;
-}
-
-#links{
-  display: table-cell;
 }
 
 #subscribe{
@@ -68,11 +86,13 @@ body {
   text-align: left;
   vertical-align: middle;
   font-size: 1.5vw;
-  background-color: #13121257;
+  background-color: #0c2e405c;
   border-radius: 41px;
-  box-shadow: 10px 10px #00000024;
-  padding-left: 8%;
-  padding-right: 5%;
+  box-shadow: 10px 10px #00000040;
+  padding-left: 5%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .subscribe_text{
@@ -157,6 +177,56 @@ button.is_active span{
   visibility: hidden;
 }
 
+#about_us{
+  display: table;
+  height: 90%;
+  width: 90%;
+  padding: 1%;
+  margin: auto;
+}
+
+#analysis_sec{
+  display: table-cell;
+  font-family: 'Electrolize';
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5vw;
+  width: 30%;
+  padding: 0 12px;
+}
+
+#cryptobot_sec{
+  display: table-cell;
+  font-family: 'Electrolize';
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5vw;
+  width: 30%;
+  padding: 0 12px;
+}
+
+#toNewWeb_sec{
+  display: table-cell;
+  font-family: 'Electrolize';
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5vw;
+  width: 30%;
+  padding: 0 12px;
+}
+
+#contact{
+    display: table;
+    height: 10%;
+    width: 95%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#links{
+  display: table-cell;
+}
+
 /* Social media buttons */
 .fa {
   padding: 10px;
@@ -166,7 +236,7 @@ button.is_active span{
   text-decoration: none;
   background: #44484a00;
   color: white;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 /* Set a specific color for each brand */

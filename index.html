@@ -1,72 +1,104 @@
 <html>
-    <head>
-        <title>Blokkere</title>
-        <meta property="og:title" content="Blokkere">
-        <meta name="twitter:title" content="Blokkere">
-        
-        <meta name="description" content="Blockchain consultants">
-        <meta property="og:description" content="Blockchain consultants">
-        <meta name="twitter:description" content="Blockchain consultants">
-        
-        <meta property="og:image" content="https://blokkere.com/images/blokkere_preview.PNG">
-        <meta name="twitter:image" content="https://blokkere.com/images/blokkere_preview.PNG">
-        <link rel="icon" type="image/x-icon" href="./images/block.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
-        <link rel="stylesheet" href="./styles/home.css"/>
-        <link rel="stylesheet" href="./styles/toast.css"/>
-    </head>
-    <body>
-        <div id="snackbar">Thanks for subscribing</div>
-        <div id="page">
-            <div id="header">
-                <div id="logo"></div>
-                <div id="title">Blokkere</div>
+
+<head>
+    <title>Blokkere</title>
+    <meta property="og:title" content="Blokkere">
+    <meta name="twitter:title" content="Blokkere">
+
+    <meta name="description" content="Blockchain consultants">
+    <meta property="og:description" content="Blockchain consultants">
+    <meta name="twitter:description" content="Blockchain consultants">
+
+    <meta property="og:image" content="https://blokkere.com/images/blokkere_preview.PNG">
+    <meta name="twitter:image" content="https://blokkere.com/images/blokkere_preview.PNG">
+    <link rel="icon" type="image/x-icon" href="./images/block.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/toast.css" />
+</head>
+
+<body>
+    <div id="snackbar">Thanks for subscribing</div>
+    <div id="page">
+        <header id="header">
+            <div id="logo"></div>
+            <div id="title">Blokkere</div>
+            <div id="right_side">
+                <a href="#about_us" class="rs rs-about">About Us</a>
             </div>
-            <div id="content">
-                <div id="what">
-                    We are Blockchain experts
-                </div>
-                <div id="subscribe">
-                    <p class="subscribe_text">
-                        Request access to our private Beta<br><br>
-                        Tell us a bit about yourself<br>
-                    </p>
-                    <form id="my-form" action="https://formspree.io/f/mbjbgppw" method="POST">
-                        <input type="name" name="name" placeholder="Your Name"/><br>
-                        <input type="email" name="email" placeholder="Your Email"/><br>
-                        <input type="text" name="message" placeholder="Your Message"/><br><br>
-                        <button class="" id="my-form-button">
-                                        <span>Submit</span>
-                                        <div class="success">
-                                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
-                                        
-                                                <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
-                                            </svg>
-                                        </div>
-                                    </button>
-                        <p id="my-form-status"></p>
-                    </form>
-                </div>
-                <div id="contact">
-                    <div id="links">
-                        <a href="#" class="fa fa-twitter" target="_blank"></a>
-                        <a href="mailto::letscrypto@blokkere.com?subject=Help me with a new query!" class="fa fa-envelope" target="_blank"></a>
-                        <a href="https://t.me/+EaEnn1uRy7E1MTBh" class="fa fa-telegram" target="_blank"></a>
-                        <a href="#" class="fa fa-whatsapp"></a>
-                    </div>
-                </div>
+        </header>
+        <section id="content">
+            <div id="what">
+                We are Blockchain experts
             </div>
-        </div>
-        <script>
-            var form = document.getElementById("my-form");
-            function myFunction() {
-                var x = document.getElementById("snackbar");
-                x.className = "show";
-                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }
-            
-            async function handleSubmit(event) {
+            <div id="subscribe">
+                <p class="subscribe_text">
+                    Request access to our private Beta<br><br>
+                    Tell us a bit about yourself<br>
+                </p>
+                <form id="my-form" action="https://formspree.io/f/mbjbgppw" method="POST">
+                    <input type="name" name="name" placeholder="Your Name" /><br>
+                    <input type="email" name="email" placeholder="Your Email" /><br>
+                    <input type="text" name="message" placeholder="Your Message" /><br><br>
+                    <button class="" id="my-form-button">
+                        <span>Submit</span>
+                        <div class="success">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 29.756 29.756"
+                                style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+
+                                <path
+                                    d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z" />
+                            </svg>
+                        </div>
+                    </button>
+                    <p id="my-form-status"></p>
+                </form>
+            </div>
+        </section>
+        <section id="about_us">
+            <div id="analysis_sec">
+                <p class="analysis_sec_text">
+                    We are used to seeing market reports, analysis on company behavior and news for conventional markets and equities and indexes.
+                    <br><br>Join Blokkere to get the same analysis done for your favorite Crypto Currencies. 
+                </p>
+            </div>
+            <div id="cryptobot_sec">
+                <p class="cryptobot_sec_text">
+                    Not your everyday bot trader.<br><br>
+                    At Blokkere we use the Power of AI and Deep Learning to bring you the best bot trader on the market.
+                    <br><br>Get insights into the popular currencies and a peek into where it might be headed to help you make the right decisions.
+                </p>
+            </div>
+            <div id="toNewWeb_sec">
+                <p class="toNewWeb_sec_text">
+                    All businesses today leverage the power of Web2.0.<br><br>At Blokkere we want to help you bridge that gap to Web3.0.
+                    <br><br>Blokkere provides dynamic tools to help transform 2.0 -> 3.0 for your business systems.
+                </p>
+            </div>
+        </section>
+        <footer id="contact">
+            <div id="links">
+                <a href="#" class="fa fa-twitter" target="_blank"></a>
+                <a href="mailto::letscrypto@blokkere.com?subject=Help me with a new query!" class="fa fa-envelope"
+                    target="_blank"></a>
+                <a href="https://t.me/+EaEnn1uRy7E1MTBh" class="fa fa-telegram" target="_blank"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SUBMIT FORM SCRIPT IMPLEMENTATION-->
+
+    <script>
+        var form = document.getElementById("my-form");
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+
+        async function handleSubmit(event) {
             event.preventDefault();
             var status = document.getElementById("my-form-status");
             var data = new FormData(event.target);
@@ -78,28 +110,29 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                myFunction();
-                form.reset()
+                    myFunction();
+                    form.reset()
                 } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                    }
-                })
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
                 }
             }).catch(error => {
                 status.innerHTML = "Oops! There was a problem submitting your form"
             });
-            }
-            form.addEventListener("submit", handleSubmit);
-            
-            let btn = document.querySelector("button");
-            btn.addEventListener("click", active);
-            function active() {
-                btn.classList.toggle("is_active");
-            }
-        </script>
-    </body>
+        }
+        form.addEventListener("submit", handleSubmit);
+
+        let btn = document.querySelector("button");
+        btn.addEventListener("click", active);
+        function active() {
+            btn.classList.toggle("is_active");
+        }
+    </script>
+</body>
+
 </html>
