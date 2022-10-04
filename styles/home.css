@@ -37,7 +37,7 @@ body {
     vertical-align: middle;
 }
 
-#right_side {
+#right_side_header {
     font-size: 3vw;
     font-family: 'Electrolize';
     display: table-cell;
@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     background: #44484a00;
     color: white;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Facebook */
@@ -223,6 +223,11 @@ button.is_active span{
     vertical-align: middle;
 }
 
+#right_side_footer {
+    display: table-cell;
+    text-align: right;
+}
+
 #links{
   display: table-cell;
 }
@@ -268,5 +273,14 @@ button.is_active span{
 
 /* Telegram */
 .fa-telegram:hover {
-    color: #0088cc;
+    color: #229ED9;
+}
+
+/* Telegram */
+.fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.fa-arrow-up:hover {
+    color: #363541;
 }
