@@ -47,6 +47,7 @@ body {
 }
 
 .rs{
+    font-size: 2vw;
     text-decoration: none;
     background: #44484a00;
     color: white;
@@ -115,8 +116,8 @@ button{
   font-weight: bold;
   letter-spacing: 1px;
   border: 3px solid #8C82FC;
-  background: #fff;
-  color: #8C82FC;
+  background: #8C82FC;
+  color: #ffffff;
   border-radius: 40px;
   cursor: pointer;
   /* overflow: hidden; */
@@ -124,7 +125,7 @@ button{
 }
 
 button:hover{
-  background: #8C82FC;
+  background: #82a7fc;
   color: #fff;
 }
 
@@ -183,9 +184,13 @@ button.is_active span{
   width: 90%;
   padding: 1%;
   margin: auto;
+  border-spacing: 1vw;
 }
 
 #analysis_sec{
+  background-color: #9400d3;
+  border-radius: 10px;
+  border: 3px black solid;
   display: table-cell;
   font-family: 'Electrolize';
   text-align: center;
@@ -196,6 +201,9 @@ button.is_active span{
 }
 
 #cryptobot_sec{
+  background-color: #ff1493;
+  border-radius: 10px;
+  border: 3px black solid;
   display: table-cell;
   font-family: 'Electrolize';
   text-align: center;
@@ -206,6 +214,9 @@ button.is_active span{
 }
 
 #toNewWeb_sec{
+  background-color: orange;
+  border-radius: 10px;
+  border: 3px black solid;
   display: table-cell;
   font-family: 'Electrolize';
   text-align: center;
@@ -282,5 +293,5 @@ button.is_active span{
 }
 
 .fa-arrow-up:hover {
-    color: #363541;
+    color: #8c82fc;
 }
