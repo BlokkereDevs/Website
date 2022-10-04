@@ -1,8 +1,9 @@
 var form = document.getElementById("my-form");
-function showToast() {
+
+function showSnackbar() {
     var x = document.getElementById("snackbar");
     x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 
 async function handleSubmit(event) {
@@ -17,19 +18,25 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
-        showToast();
-        form.reset()
+            showSnackbar();
+            form.reset()
         } else {
-        response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-        })
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+            })
         }
     }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
     });
 }
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
+
+let btn = document.querySelector("button");
+btn.addEventListener("click", active);
+function active() {
+    btn.classList.toggle("is_active");
+}
