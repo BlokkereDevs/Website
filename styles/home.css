@@ -187,6 +187,25 @@ button.is_active span{
   border-spacing: 1vw;
 }
 
+#about_us p{
+    color: black;
+    font-weight: bold;
+}
+
+#about_us .icon{
+    display: table-cell;
+    padding-top: 30%;
+}
+#about_us .content{
+    height: 70%;
+}
+#about_us img{
+    width: 44%;
+}
+
+img:hover {
+}
+
 #analysis_sec{
   background-color: #9400d3;
   border-radius: 10px;
