@@ -13,6 +13,10 @@ class handler(BaseHTTPRequestHandler):
             message = "Hello, " + dic["name"] + "!"              
         else:
             message = "Hello, stranger!"
-        message += str(MinuteBot.getBitcoinValue())
+        btcValue = MinuteBot.getBitcoinValue()
+        if btcValue is None:
+            message+= "\n bitcoin value is none"
+        else:
+            message += str(MinuteBot.getBitcoinValue())
         self.wfile.write(message.encode())
         return
